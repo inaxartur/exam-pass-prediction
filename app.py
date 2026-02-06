@@ -169,12 +169,12 @@ df["passed exam"].value_counts(normalize=True)
 import streamlit as st
 
 # ui
-st.title("Predykcja zdania egzaminu")
+st.title("Prediction of passing an exams: math, reading, writing.")
 
-gender = st.selectbox("Płeć", ["male", "female"])
-course = st.selectbox("Ukończony kurs przygotowawczy?", ["True", "False"])
-lunch = st.selectbox("Zjedzony lunch?", ["True", "False"])
-education = st.selectbox("Ukończona edukacja", [
+gender = st.selectbox("Gender", ["male", "female"])
+course = st.selectbox("Completed course?", ["Yes", "No"])
+lunch = st.selectbox("Ate lunch?", ["Yes", "No"])
+education = st.selectbox("Completed education", [
     "associate's degree", "bachelor's degree", "high school", "master's degree",
     "some college", "some high school"
 ])
@@ -184,8 +184,8 @@ new_data = pd.DataFrame([{col:0 for col in categories}])
 
 # Ustawienie odpowiednich kolumn na 1
 new_data[gender] = 1
-new_data["had lunch"] = 1 if lunch=="True" else 0
-new_data["completed preparation course"] = 1 if course=="True" else 0
+new_data["had lunch"] = 1 if lunch=="Yes" else 0
+new_data["completed preparation course"] = 1 if course=="Yes" else 0
 new_data[education] = 1
 
 # prawdopodobienstwo
@@ -194,7 +194,7 @@ prob_svm = svm_pipeline.predict_proba(new_data)[:,1][0]
 prob_rf = rf.predict_proba(new_data)[:,1][0]
 
 # Wyświetlenie wyników
-st.subheader("Prawdopodobieństwo zdania egzaminu:")
+st.subheader("Probability of passing an exams:")
 st.write(f"Logistic Regression: {round(prob_lr*100, 2)}%")
 st.write(f"SVM: {round(prob_svm*100, 2)}%")
 st.write(f"Random Forest: {round(prob_rf*100, 2)}%")
