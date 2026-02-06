@@ -19,3 +19,5 @@
 > ```
 > streamlit run app.py
 > ```
+
+![alt text](exam_predict_app.png "Title")
