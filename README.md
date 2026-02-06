@@ -15,6 +15,7 @@
 > ### How to run a local hosted app:
 > - Go into folder with this project
 > - Go into terminal by: right-click -> Open in terminal
-> - Run command: ```
+> - Run command:
+```
 streamlit run app.py
 ```
