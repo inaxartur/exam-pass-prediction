@@ -16,3 +16,9 @@
 > - Go into folder with this project
 > - Go into terminal by: right-click -> Open in terminal
 > - Run command: ```streamlit run app.py```
+
+```
+function test() {
+  console.log("This code will have a copy button to the right of it");
+}
+```
