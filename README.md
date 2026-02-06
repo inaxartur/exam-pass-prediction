@@ -4,15 +4,16 @@
 
 > [!IMPORTANT]
 > ### Needed libraries installed through pip:
-- matplotlib
-- numpy
-- pandas
-- scikit_learn
-- seaborn
-- streamlit
+> - matplotlib
+> - numpy
+> - pandas
+> - scikit_learn
+> - seaborn
+> - streamlit
 
-### How to run a local hosted app:
-- Go into folder with this project
-- Go into terminal by: right-click -> Open in terminal
-- Run command:
+> [!TIP]
+> ### How to run a local hosted app:
+> - Go into folder with this project
+> - Go into terminal by: right-click -> Open in terminal
+> - Run command:
 > streamlit run app.py
