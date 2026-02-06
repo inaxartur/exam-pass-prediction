@@ -16,4 +16,4 @@
 > - Go into folder with this project
 > - Go into terminal by: right-click -> Open in terminal
 > - Run command: ```shell
-> - streamlit run app.py```
+streamlit run app.py```
