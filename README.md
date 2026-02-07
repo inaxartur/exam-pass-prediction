@@ -13,6 +13,7 @@
 
 > [!TIP]
 > ### How to run a local hosted app:
+> - Download this project
 > - Go into folder with this project
 > - Go into terminal by: right-click -> Open in terminal
 > - Run command:
