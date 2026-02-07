@@ -1,4 +1,4 @@
-# Exam pass prediction app
+# Exam Pass Prediction Web App
 > [!NOTE]
 > Python ver: 3.13.12
 
